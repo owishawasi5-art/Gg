@@ -1,0 +1,172 @@
+```css
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hero-section {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+.hero-section .btn {
+    background-color: #e74c3c;
+    color: white;
+    padding:10px 20px;
+    text-decoration: none;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.hero-section .btn:hover {
+    background-color: #c0392b;
+}
+
+.services-section, .why-us-section, .projects-section, .how-it-works-section, .faq-section, .contact-section {
+    padding: 50px 0;
+}
+
+.services-section .service-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.services-section .service-item img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.services-section .service-item h3 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.services-section .service-item p {
+    margin: 0;
+}
+
+.projects-section .project-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.projects-section .project-item img {
+    width: 100px;
+    margin-right: 20px;
+}
+
+.projects-section .project-item h3 {
+    margin: 0;
+    margin-right: 20px;
+}
+
+.projects-section .project-item p {
+    margin: 0;
+}
+
+.how-it-works-section ol {
+    list-style-type: decimal;
+    padding-left:20px;
+}
+
+.faq-section .faq-item {
+    margin-bottom:20px;
+}
+
+.faq-section .faq-item h4 {
+    margin: 0;
+    cursor: pointer;
+}
+
+.faq-section .faq-item p {
+    display: none;
+    margin-top: 10px;
+}
+
+.contact-section form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-section form input, .contact-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background-color: #2c3e50;
+    color: white;
+    padding:10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-section form button:hover {
+    background-color: #34495e;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .services-section .service-item, .projects-section .project-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .services-section .service-item img, .projects-section .project-item img {
+        margin-bottom: 10px;
+    }
+}
